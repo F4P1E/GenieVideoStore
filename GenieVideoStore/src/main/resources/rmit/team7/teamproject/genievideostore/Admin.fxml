@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rmit.team7.teamproject.genievideostore.AdminController">
+   <top>
+      <BorderPane BorderPane.alignment="CENTER">
+         <center>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Admin">
+               <font>
+                  <Font name="Impact" size="46.0" />
+               </font>
+            </Text>
+         </center>
+      </BorderPane>
+   </top>
+   <padding>
+      <Insets bottom="15.0" left="30.0" right="30.0" top="15.0" />
+   </padding>
+   <left>
+      <VBox alignment="TOP_CENTER" prefHeight="300.0" prefWidth="250.0" spacing="30.0" style="-fx-background-color: lightgray; -fx-background-radius: 30;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fx:id="cusSetting" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Setting" textAlignment="CENTER">
+               <font>
+                  <Font name="Impact" size="29.0" />
+               </font>
+            </Text>
+            <HBox />
+            <Button fx:id="btAddNewCus" mnemonicParsing="false" text="Add new customer" />
+            <Button fx:id="btUpdateCurrentCus" mnemonicParsing="false" text="Update current customer" />
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </padding>
+      </VBox>
+   </left>
+   <right>
+      <VBox alignment="TOP_CENTER" prefHeight="300.0" prefWidth="250.0" spacing="25.0" style="-fx-background-color: lightgray; -fx-background-radius: 30;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox>
+               <children>
+                  <TextField fx:id="cusSearchField" prefHeight="26.0" prefWidth="167.0" />
+                  <Button mnemonicParsing="false" prefWidth="54.0" text="Search" />
+               </children>
+            </HBox>
+            <ListView prefHeight="200.0" prefWidth="200.0" />
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </padding>
+      </VBox>
+   </right>
+</BorderPane>
